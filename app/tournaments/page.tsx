@@ -30,7 +30,7 @@ const tournaments = [
 
 export default function TournamentsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-dark to-primary">
+    <main className="min-h-screen bg-gradient-to-br from-dark to-dark-lighter">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-display font-bold text-light mb-4">
@@ -45,13 +45,13 @@ export default function TournamentsPage() {
           {tournaments.map((tournament) => (
             <div 
               key={tournament.id}
-              className="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-light hover:transform hover:scale-105 transition-all"
+              className="card"
             >
-              <h2 className="text-2xl font-display font-bold mb-2">{tournament.name}</h2>
+              <h2 className="text-2xl font-display font-bold mb-2 text-light">{tournament.name}</h2>
               <div className="space-y-2">
                 <p className="flex justify-between">
                   <span className="text-light/80">Date:</span>
-                  <span className="font-semibold">{tournament.date}</span>
+                  <span className="font-semibold text-light">{tournament.date}</span>
                 </p>
                 <p className="flex justify-between">
                   <span className="text-light/80">Statut:</span>
@@ -65,11 +65,11 @@ export default function TournamentsPage() {
                 </p>
                 <p className="flex justify-between">
                   <span className="text-light/80">Participants:</span>
-                  <span className="font-semibold">{tournament.participants}</span>
+                  <span className="font-semibold text-light">{tournament.participants}</span>
                 </p>
                 <p className="flex justify-between">
                   <span className="text-light/80">Prix:</span>
-                  <span className="font-semibold">{tournament.prizePool}</span>
+                  <span className="font-semibold text-light">{tournament.prizePool}</span>
                 </p>
               </div>
               <Link 

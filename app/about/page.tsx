@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-dark to-primary">
+    <main className="min-h-screen bg-gradient-to-br from-dark to-dark-lighter">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-display font-bold text-light mb-8 text-center">
@@ -10,7 +10,7 @@ export default function AboutPage() {
           </h1>
           
           <div className="space-y-8 text-light">
-            <section className="bg-white/10 backdrop-blur-lg rounded-xl p-6">
+            <section className="card">
               <h2 className="text-2xl font-display font-bold mb-4">Notre Mission</h2>
               <p className="text-lg">
                 OpenFront Tournaments est la plateforme de référence pour suivre et participer aux tournois du jeu OpenFront. 
@@ -18,7 +18,7 @@ export default function AboutPage() {
               </p>
             </section>
 
-            <section className="bg-white/10 backdrop-blur-lg rounded-xl p-6">
+            <section className="card">
               <h2 className="text-2xl font-display font-bold mb-4">Fonctionnalités</h2>
               <ul className="list-disc list-inside space-y-2 text-lg">
                 <li>Suivi en temps réel des tournois</li>
@@ -29,7 +29,7 @@ export default function AboutPage() {
               </ul>
             </section>
 
-            <section className="bg-white/10 backdrop-blur-lg rounded-xl p-6">
+            <section className="card">
               <h2 className="text-2xl font-display font-bold mb-4">Rejoignez-nous</h2>
               <p className="text-lg mb-4">
                 Que vous soyez un joueur débutant ou expérimenté, OpenFront Tournaments est l'endroit idéal pour 
