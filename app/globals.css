@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 17, 24, 39;
-  --background-end-rgb: 55, 65, 81;
+  --background-start-rgb: 45, 52, 54;
+  --background-end-rgb: 255, 107, 107;
 }
 
 body {
@@ -21,9 +21,5 @@ body {
 @layer components {
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-  
-  .card {
-    @apply bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 text-light hover:transform hover:scale-105 transition-all;
   }
 } 

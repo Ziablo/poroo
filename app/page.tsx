@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-dark to-dark-lighter">
+    <main className="min-h-screen bg-gradient-to-br from-dark to-primary">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center">
           <h1 className="text-5xl font-display font-bold text-light mb-6">
@@ -20,7 +20,7 @@ export default function Home() {
             </Link>
             <Link 
               href="/about" 
-              className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              className="bg-secondary hover:bg-secondary/90 text-dark px-8 py-3 rounded-lg font-semibold transition-colors"
             >
               À propos
             </Link>
